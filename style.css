@@ -1,4 +1,4 @@
-@import url(/https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cookie&family=Rouge+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap');
 
@@ -6,7 +6,7 @@
 body{
     overflow-x: hidden; 
     font-family: 'Merriweather', serif;
-    color: #505962;
+    
 }
 
 .navbar{
@@ -51,10 +51,11 @@ body{
     text-align: center;
     background-image: url('file:///C:/Users/Dani/source/repos/Portfolio/images/leaves_bkg.jpg'); 
 }
-
+/*Landing page buttons */
 .caption a{
     width: 15%;
     text-transform: uppercase;
+    
 }
 
 .caption{
@@ -84,3 +85,24 @@ hr{
     background-color: black;
 }
 
+.displayone{
+    background-color: #eee;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.displaytwo{
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.about-wrap img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 150px;
+    
+}
+.center{
+    text-align: center;
+}
