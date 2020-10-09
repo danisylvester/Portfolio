@@ -1,0 +1,86 @@
+@import url(/https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cookie&family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap');
+
+
+body{
+    overflow-x: hidden; 
+    font-family: 'Merriweather', serif;
+    color: #505962;
+}
+
+.navbar{
+    text-transform: uppercase;
+    background-color: #505962;
+}
+
+.heading{
+    text-align: center;
+}
+
+.landing{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background: #E9ECEF;
+    z-index: -1;
+}
+
+.home-wrap{
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.home-inner{
+    position: absolute;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+    text-align: center;
+    background-image: url('file:///C:/Users/Dani/source/repos/Portfolio/images/leaves_bkg.jpg'); 
+}
+
+.caption a{
+    width: 15%;
+    text-transform: uppercase;
+}
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+}
+.caption h3{
+    color:white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding-bottom: 1.25rem;
+    font-family: 'Merriweather', serif;
+}
+.caption h5{
+    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 1.25rem;
+}
+
+hr{
+    border: 0;
+    width: 50%;
+    height: 2px;
+    background-color: black;
+}
+
