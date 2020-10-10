@@ -1,23 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cookie&family=Rouge+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 body{
     overflow-x: hidden; 
     font-family: 'Merriweather', serif;
     
 }
-
+/*Navbar start*/
 .navbar{
     text-transform: uppercase;
     background-color: #505962;
+    font-family: 'Playfair Display', serif;
+}/*Navbar end*/
+
+/*Side Navbar start*/
+.sidenav{
+    background: none;
+    position: fixed;
+    top: 45%;
+    overflow: hidden;
+    padding-left: 15px;
+    max-width: 6%;
+    font-size: small;
+}
+.sidenav a{
+    color: #505962;
 }
 
-.heading{
-    text-align: center;
-}
-
+/*Landing page start*/
 .landing{
     position: relative;
     width: 100%;
@@ -26,7 +38,6 @@ body{
     background: #E9ECEF;
     z-index: -1;
 }
-
 .home-wrap{
     clip: rect(0, auto, auto, 0);
     position: absolute;
@@ -49,7 +60,7 @@ body{
             transform: translateZ(0);
     will-change: transform;
     text-align: center;
-    background-image: url('file:///C:/Users/Dani/source/repos/Portfolio/images/leaves_bkg.jpg'); 
+    background-image: url('file:///C:/Users/Dani/source/repos/Portfolio/images/bkg-opttwo.jpg'); 
 }
 /*Landing page buttons */
 .caption a{
@@ -57,7 +68,6 @@ body{
     text-transform: uppercase;
     
 }
-
 .caption{
     width: 100%;
     max-width: 100%;
@@ -65,26 +75,31 @@ body{
     top: 35%;
     z-index: 1;
 }
-.caption h3{
+.caption h1{
     color:white;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     padding-bottom: 1.25rem;
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
 }
-.caption h5{
+.caption h3{
     color: white;
     font-size: 1.5rem;
     padding-bottom: 1.25rem;
-}
+    font-family: 'Merriweather', serif;
+}/*Landing page end*/
 
+/*Section headings */
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+}
 hr{
     border: 0;
     width: 50%;
     height: 2px;
     background-color: black;
 }
-
 .displayone{
     background-color: #eee;
     padding-top: 2rem;
@@ -101,7 +116,6 @@ hr{
     margin-right: auto;
     border-radius: 50%;
     width: 150px;
-    
 }
 .center{
     text-align: center;
