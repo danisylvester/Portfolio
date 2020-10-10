@@ -26,7 +26,7 @@ body{
     font-size: small;
 }
 .sidenav a{
-    color: #505962;
+    padding-bottom: 20px; /* WHY IS THIS NOT WORKING? */
 }
 
 /*Landing page start*/
@@ -64,7 +64,7 @@ body{
 }
 /*Landing page buttons */
 .caption a{
-    width: 15%;
+    width: 12%;
     text-transform: uppercase;
     
 }
@@ -102,21 +102,32 @@ hr{
 }
 .displayone{
     background-color: #eee;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
 }
 .displaytwo{
     background-color: white;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
 }
-.about-wrap img{
+.profile-pic{
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
     width: 150px;
 }
-.center{
+.icon-style{
+    display: block;
     text-align: center;
+    font-size: 50px;
+
+}
+.icon-img-style{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: auto;
+
 }
