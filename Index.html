@@ -51,7 +51,7 @@
     <!--End Navigation-->
     
     <!--Start Landing Page Section-->
-    <div class="landing">
+    <div class="landing container-fluid">
       <div class="home-wrap">
         <div class="home-inner">
           <!--Start Landing Page Caption-->
@@ -59,8 +59,10 @@
             <h3>-Hello I'm-</h3>
             <h1>Dani Sylvester</h1>
             <h3>Junior Website Developer</h3>
-            <a class="btn btn-outline-light" href="#projects">Skip to Projects</a>
-            <a class="btn btn-outline-light" href="#"><i class="fa fa-download" aria-hidden="true" style="font-size: 17px;"> Resume</a></i>
+            <div class="row justify-content-center">
+            <a class="btn btn-outline-light col-2"   href="#projects">Skip to Projects</a>
+            <a class="btn btn-outline-light col-2" href="#"><i class="fa fa-download" aria-hidden="true" style="font-size: 17px;"> Resume</a></i>
+            </div>
           </div>        
         </div>
       </div>
@@ -68,7 +70,7 @@
     </div> <!--End Landing Page Section-->
 
     <!--Start Side Nav-->
-    <div class="sidenav">
+    <div class="sidenav container">
       <p><strong>Find Me:</strong></p>
       <a href="https://github.com/danisylvester" target="_blank" data-toggle="tooltip" data-placement="top" title="GitHub"><i class="fa fa-github" aria-hidden="true" style="font-size: 50px; color: #505962;"></i></a></br>      
       <a href="https://www.linkedin.com/in/dani-sylvester/" target="_blank" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true" style="font-size: 50px;"></i></a><br>
@@ -78,15 +80,15 @@
     
     <div class="main"> <!--Start Main Content-->
       <!--Start About Me Section-->
-      <div id="#aboutme" class="container-fluid displayone">
+      <div id="aboutme" class="container-fluid displayone">
         <div class="container">
           <h2 class="heading">About Me</h2>
           <hr>
           <div class="row pt-5">
-            <img class="profile-pic" src="file:///C:/Users/Dani/source/repos/Portfolio/images/profile%20pic.jpg" alt="Profile Picture">
+            <img class="profile-pic shadow" src="file:///C:/Users/Dani/source/repos/Portfolio/images/profile%20pic.jpg" alt="Profile Picture">
           </div>
           <div class="row pt-4">
-            <div class="col-sm-7 mx-auto">
+            <div class="col-sm-10 mx-auto">
               <div class="d-flex justify-content-between">
                 <p class="text-center">My name is Dani Sylvester. I am a junior website developer with a passion for creative problem solving.
                   I have experience with object-oriented programming, .NetCore framework, creating databases, and utilizing API's.
@@ -99,43 +101,43 @@
         </div> <!--End About Me Section-->
         
         <!--Start Skills Section-->
-        <div id="#skills" class="container-fluid displaytwo">
+        <div id="skills" class="container-fluid displaytwo">
           <div class="container">
             <h2 class="heading">Skills</h2>
             <hr>
-            <div class="row pt-5">
-              <div class="col-sm-2 mx-auto">
+            <div class="row">
+              <div class="col-sm-2 mx-auto p-5">
                 <i class="devicon-csharp-plain-wordmark colored icon-style"></i>
                 <p class="text-center">C Sharp</p>
                </div>
-             <div class="col-sm-2 mx-auto">
+             <div class="col-sm-2 mx-auto p-5">
                <img class="img-fluid icon-img-style" src="file:///C:/Users/Dani/source/repos/Portfolio/images/asp.net-icon.png">
                <p class="text-center">ASP.NET MVC</p>
               </div>
-              <div class="col-sm-2 mx-auto">
+              <div class="col-sm-2 mx-auto p-5">
                <i class="devicon-mysql-plain colored icon-style"></i>
                <p class="text-center">SQL</p>
               </div>
-              <div class="col-sm-2 mx-auto">
+              <div class="col-sm-2 mx-auto p-5">
                <i class="devicon-dot-net-plain colored icon-style"></i>
                <p class="text-center">.NET Core</p>
               </div>
             </div>
 
-            <div class="row pt-5">
-              <div class="col-sm-2 mx-auto">
+            <div class="row">
+              <div class="col-sm-2 mx-auto p-5">
                 <i class="devicon-javascript-plain colored icon-style"></i>
                 <p class="text-center">JavaScript</p>
               </div>
-              <div class="col-sm-2 mx-auto">
+              <div class="col-sm-2 mx-auto p-5">
                 <i class="devicon-html5-plain-wordmark colored icon-style"></i>
                 <p class="text-center">HTML</p>
              </div>
-              <div class="col-sm-2 mx-auto">
+              <div class="col-sm-2 mx-auto p-5">
                <i class="devicon-css3-plain-wordmark colored icon-style"></i>
                <p class="text-center">CSS</p>
               </div>
-             <div class="col-sm-2 mx-auto">
+             <div class="col-sm-2 mx-auto p-5">
                 <i class="devicon-bootstrap-plain colored icon-style"></i>
                 <p class="text-center">Bootstrap</p>
              </div>
@@ -147,14 +149,14 @@
     
     
     <!--Start Projects Section-->
-    <div id="#projects" class="container-fluid displayone">
+    <div id="projects" class="container-fluid displayone">
       <div class="container">
         <h2 class="heading">Projects</h2>
         <!--Project 1-->
         <hr>
         <div class="row pt-5 pb-5">
           <div class="col-sm-6">
-            <img class="rounded img-fluid" src="file:///C:/Users/Dani/source/repos/Portfolio/images/Placeholder.jpg"> 
+            <img class="rounded img-fluid shadow" src="file:///C:/Users/Dani/source/repos/Portfolio/images/Placeholder.jpg"> 
           </div>
           <div class="col-sm-6">
             <h4 class="text-center">Project 1 Name</h4>
@@ -177,14 +179,14 @@
               <p class="pt-4 text-right"> C# | JavaScript | MySql | Bootstrap | CSS | HTLM</p>
             </div>
           <div class="col-sm-6">
-            <img class="rounded img-fluid" src="file:///C:/Users/Dani/source/repos/Portfolio/images/Placeholder.jpg"> 
+            <img class="rounded img-fluid shadow" src="file:///C:/Users/Dani/source/repos/Portfolio/images/Placeholder.jpg"> 
           </div>
         </div>
         <!--Project 3-->
         <hr>
         <div class="row pt-5 pb-5">
           <div class="col-sm-6">
-            <img class="rounded img-fluid" src="file:///C:/Users/Dani/source/repos/Portfolio/images/Placeholder.jpg"> 
+            <img class="rounded img-fluid shadow" src="file:///C:/Users/Dani/source/repos/Portfolio/images/Placeholder.jpg"> 
           </div>
           <div class="col-sm-6">
             <h4 class="text-center">Project 3 Name</h4>
@@ -199,12 +201,25 @@
     </div><!--End Projects Section-->
 
     <!--Start Contact Me-->
-    <div id="#contact" class="container-fluid displaytwo">
-      <div class="container">
-        <h2 class="heading">Contact Me</h2>
-        <hr>
+    <div id="contact">
+
+      <div class="container-fluid displaytwo">
+        <div class="container">
+          <h2 class="heading">Contact Me</h2>
+          <hr>
+          <div class="row pt-5 pb-5">
+            <div class="d-flex justify-content-center">
+              <div class="col-sm-4">
+                <img class="thank-img img-fluid shadow" src="file:///C:/Users/Dani/source/repos/Portfolio/images/thank-you-full.jpg" alt="Thank You Photo">
+              </div>
+              <div class="col-sm-7">
+                <p>Thank you for visiting out my portfolio! I am open to new opportunities, and I'd love to connect with you.</br></br> Let's get in contact.</p>
+                <a href="mailto: maria.sylvester10@gmail.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Send an Email"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> <!--End Contact Me Section-->
       </div>
-    </div> <!--End Contact Me Section-->
 
    
     <!-- Optional JavaScript -->

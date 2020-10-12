@@ -3,9 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
 body{
-    overflow-x: hidden; 
+    
+    overflow-x: hidden;
     font-family: 'Merriweather', serif;
+    font-size: large;
     
 }
 /*Navbar start*/
@@ -36,7 +41,6 @@ body{
     height: 100vh;
     display: table;
     background: #E9ECEF;
-    z-index: -1;
 }
 .home-wrap{
     clip: rect(0, auto, auto, 0);
@@ -64,7 +68,6 @@ body{
 }
 /*Landing page buttons */
 .caption a{
-    width: 12%;
     text-transform: uppercase;
     
 }
@@ -87,7 +90,11 @@ body{
     font-size: 1.5rem;
     padding-bottom: 1.25rem;
     font-family: 'Merriweather', serif;
-}/*Landing page end*/
+}
+.dbutton{
+    z-index:100;
+}
+/*Landing page end*/
 
 /*Section headings */
 .heading{
@@ -102,20 +109,20 @@ hr{
 }
 .displayone{
     background-color: #eee;
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 .displaytwo{
     background-color: white;
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 .profile-pic{
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
-    width: 150px;
+    width: 200px;
 }
 .icon-style{
     display: block;
@@ -129,5 +136,9 @@ hr{
     margin-right: auto;
     width: 50px;
     height: auto;
+}
+.thank-img{
+    display: block;
+    width: 300px;
 
 }
