@@ -18,6 +18,8 @@ body{
     text-transform: uppercase;
     background-color: #505962;
     font-family: 'Playfair Display', serif;
+    font-size: medium;
+    opacity: 0.9;
 }/*Navbar end*/
 
 /*Side Navbar start*/
@@ -27,7 +29,6 @@ body{
     top: 45%;
     overflow: hidden;
     padding-left: 15px;
-    max-width: 6%;
     font-size: small;
 }
 .sidenav a{
@@ -64,7 +65,7 @@ body{
             transform: translateZ(0);
     will-change: transform;
     text-align: center;
-    background-image: url('file:///C:/Users/Dani/source/repos/Portfolio/images/bkg-opttwo.jpg'); 
+    background-image: url('images/leaves_bkg.jpg'); 
 }
 /*Landing page buttons */
 .caption a{
@@ -109,14 +110,13 @@ hr{
 }
 .displayone{
     background-color: #eee;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem;
 }
 .displaytwo{
     background-color: white;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem;
 }
+/* Start About Me*/
 .profile-pic{
     display: block;
     margin-left: auto;
@@ -136,9 +136,74 @@ hr{
     margin-right: auto;
     width: 50px;
     height: auto;
-}
+}/*End About Me*/
+
+/*Start Projects*/
+
+
+
+/*End Projects*/
+
+/*Start Footer*/
 .thank-img{
     display: block;
     width: 300px;
 
 }
+.footer{
+    color: #FCFCFB;
+    text-align: right;
+    background-color: #366055;
+    padding: 5px 15px;
+    font-size: 0.8em;
+}
+/*End Footer*/
+
+
+/*Media Queries Start */
+@media screen and (max-width: 768px){
+
+    
+    #side-nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width:769px){
+    #side-nav-hidden{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .displayone{
+        text-align: center;
+        padding-top: 5rem 0rem;
+    }
+    .displaytwo{
+        margin: auto;
+        padding-top: 5rem 0rem;
+    }
+    #proj-one-laptop{
+        display: none;
+    }
+    #proj-two-laptop{
+        display: none;
+    }
+    #proj-three-laptop{
+        display: none;
+    }
+}
+@media screen and (min-width: 993px){
+    #proj-one-mobile{
+        display: none;
+    }
+    #proj-two-mobile{
+        display: none;
+    }
+    #proj-three-mobile{
+        display: none;
+    }
+}
+
+/*Media Queries Ends*/
