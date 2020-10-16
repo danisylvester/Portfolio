@@ -16,17 +16,24 @@ body{
 /*Navbar start*/
 .navbar{
     text-transform: uppercase;
-    background-color: #505962;
+    background-color: transparent;
     font-family: 'Playfair Display', serif;
     font-size: medium;
+    transition:background-color 500ms linear;
+}
+.navbar.scrolled {
+    background-color: #0E1326 !important;
     opacity: 0.9;
-}/*Navbar end*/
+    transition: background-color 500ms linear;
+
+}
+/*Navbar end*/
 
 /*Side Navbar start*/
 .sidenav{
     background: none;
     position: fixed;
-    top: 45%;
+    top: 50%;
     overflow: hidden;
     padding-left: 15px;
     font-size: small;
@@ -68,10 +75,6 @@ body{
     background-image: url('images/leaves_bkg.jpg'); 
 }
 /*Landing page buttons */
-.caption a{
-    text-transform: uppercase;
-    
-}
 .caption{
     width: 100%;
     max-width: 100%;
@@ -92,8 +95,12 @@ body{
     padding-bottom: 1.25rem;
     font-family: 'Merriweather', serif;
 }
-.dbutton{
-    z-index:100;
+.landing-btns{
+    text-transform: uppercase;
+}
+.landing-btns a{
+    width: 200px;
+    margin: 10px;
 }
 /*Landing page end*/
 
@@ -138,51 +145,53 @@ hr{
     height: auto;
 }/*End About Me*/
 
-/*Start Projects*/
-
-
-
-/*End Projects*/
 
 /*Start Footer*/
 .thank-img{
     display: block;
     width: 300px;
-
 }
 .footer{
     color: #FCFCFB;
     text-align: right;
     background-color: #366055;
-    padding: 5px 15px;
+    padding: 5px 25px;
     font-size: 0.8em;
 }
 /*End Footer*/
 
 
-/*Media Queries Start */
-@media screen and (max-width: 768px){
 
-    
+/*Media Queries Start */
+/*Tablet*/
+@media  (max-width: 768px){   
     #side-nav{
         display: none;
     }
+    .displayone{
+        padding: 5rem 0rem;
+    }
+    .displaytwo{
+        padding: 5rem 0rem;
+    }
 }
 
-@media screen and (min-width:769px){
+@media  (min-width:769px){
     #side-nav-hidden{
         display: none;
     }
+    
+
 }
 
-@media screen and (max-width: 992px){
+@media (max-width: 992px){
     .displayone{
         text-align: center;
-        padding-top: 5rem 0rem;
+        
     }
     .displaytwo{
-        margin: auto;
-        padding-top: 5rem 0rem;
+        text-align: center;
+        
     }
     #proj-one-laptop{
         display: none;
@@ -193,8 +202,17 @@ hr{
     #proj-three-laptop{
         display: none;
     }
+    
 }
-@media screen and (min-width: 993px){
+@media (min-width: 993px){
+    #buttonSizer1{
+        width:200px;
+        float:right;
+    }
+    #buttonSizer2{
+        width:150px;
+        float:left;
+    }
     #proj-one-mobile{
         display: none;
     }
@@ -206,4 +224,48 @@ hr{
     }
 }
 
+@media  (min-width: 1600px){
+    #proj-one-laptop{
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+    #proj-two-laptop{
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+    #proj-three-laptop{
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+    #contact{
+        padding-right: 8rem;
+        padding-left: 8rem;
+    }
+}
+
+#skillsContainer{
+    @media (min-width: 576px){
+        width: 100%;
+    }
+    @media (min-width: 770px){
+        width: 75%
+    }
+    @media (min-width: 992px){
+        width 75%;
+    }
+    
+}
+
+#ThankYouImg{
+    width:100%;
+    height:auto;
+}
 /*Media Queries Ends*/
+
+/* Boostrap Override */
+.row{
+    margin-right:0px;
+    margin-left:0px;
+}
+
+

@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
     <script src="script.js"></script>
    
@@ -67,20 +69,31 @@
             <h3>-Hello I'm-</h3>
             <h1>Dani Sylvester</h1>
             <h3>Junior Website Developer</h3>
+            <!--Landing Buttons-->
             <div class="row justify-content-center">
-            <a class="btn btn-outline-light col-2"   href="#projects">Skip to Projects</a>
-            <a class="btn btn-outline-light col-2" href="#"><i class="fa fa-download" aria-hidden="true" style="font-size: 17px;"> Resume</a></i>
-            </div>
-          </div>        
+              <div class="col-lg-3 landing-btns">
+                <div id="buttonSizer1">
+                <a class="btn btn-outline-light text" href="#projects">Skip to Projects</a>
+                </div>
+              </div>
+
+              <div class="col-lg-3 landing-btns">
+                <div id="buttonSizer2">
+                  <a class="btn btn-outline-light" href="#"><i class="fa fa-download" aria-hidden="true" style="font-size: 17px;">  Resume</a></i>
+                </div>
+              </div>
+              
+            
+            </div><!--End Landing Buttons-->
+          </div><!--End Landing Page Caption-->        
         </div>
       </div>
-
     </div> <!--End Landing Page Section-->
     
     <div class="main"> <!--Start Main Content-->
       <!--Start About Me Section-->
       <div id="aboutme" class="container-fluid displayone">
-        <div class="container">
+        <div>
           <h2 class="heading">About Me</h2>
           <hr>
           <div class="row pt-5">
@@ -90,7 +103,7 @@
             <div class="col-sm-7 mx-auto">
               <div class="d-flex justify-content-between">
                 <p class="text-center">I am a junior website developer with a passion for creative problem solving.
-                  I am experienced in object-oriented programming and with building dynamic websites from the ground up.
+                  I am experienced with building dynamic websites from the ground up and with object-oriented programming.
                   My proficiencies include C# and the .NetCore framework. I am a quick learner, and I love learning new technologies.</br></br>
                   -Currently based in Birmingham, AL-</p>                  
               </div>
@@ -106,45 +119,47 @@
         
         <!--Start Skills Section-->
         <div id="skills" class="container-fluid displaytwo">
-          <div class="container">
+          <div>
             <h2 class="heading">Skills</h2>
             <hr>
-            <div class="row">
-              <div class="col-sm-2 mx-auto p-5">
+            <div class="container" id="skillsContainer">
+            <div class="row mt-5">
+              <div class="col-sm-2 mx-auto ">
                 <i class="devicon-csharp-plain-wordmark colored icon-style"></i>
                 <p class="text-center">C Sharp</p>
                </div>
-             <div class="col-sm-2 mx-auto p-5">
-               <img class="img-fluid icon-img-style" src="images/asp.net-icon.png">
+             <div class="col-sm-2 mx-auto ">
+               <img class="icon-img-style" src="images/asp.net-icon.png">
                <p class="text-center">ASP.NET MVC</p>
               </div>
-              <div class="col-sm-2 mx-auto p-5">
+              <div class="col-sm-2 mx-auto ">
                <i class="devicon-mysql-plain colored icon-style"></i>
                <p class="text-center">SQL</p>
               </div>
-              <div class="col-sm-2 mx-auto p-5">
+              <div class="col-sm-2 mx-auto ">
                <i class="devicon-dot-net-plain colored icon-style"></i>
                <p class="text-center">.NET Core</p>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-sm-2 mx-auto p-5">
+            <div class="row mt-md-5">
+              <div class="col-sm-2 mx-auto ">
                 <i class="devicon-javascript-plain colored icon-style"></i>
                 <p class="text-center">JavaScript</p>
               </div>
-              <div class="col-sm-2 mx-auto p-5">
+              <div class="col-sm-2 mx-auto ">
                 <i class="devicon-html5-plain-wordmark colored icon-style"></i>
                 <p class="text-center">HTML</p>
              </div>
-              <div class="col-sm-2 mx-auto p-5">
+              <div class="col-sm-2 mx-auto ">
                <i class="devicon-css3-plain-wordmark colored icon-style"></i>
                <p class="text-center">CSS</p>
               </div>
-             <div class="col-sm-2 mx-auto p-5">
+             <div class="col-sm-2 mx-auto ">
                 <i class="devicon-bootstrap-plain colored icon-style"></i>
                 <p class="text-center">Bootstrap</p>
              </div>
+            </div>
             </div>
 
 
@@ -154,7 +169,7 @@
     
     <!--Start Projects Section-->
     <div id="projects" class="container-fluid displayone">
-      <div class="container">
+      <div id="projects-inner">
         <h2 class="heading">Projects</h2>
         <!--Project 1-->
         <div id="proj-one-laptop">
@@ -181,7 +196,7 @@
         <!--Project 1 Tablet/Mobile-->
         <div id="proj-one-mobile">
           <hr>
-          <div class="row pt-5 pb-5">
+          <div class="row pt-3 pb-3">
             <div class="col-lg-6 p-3">
               <h4>Synergy Books, LLC</h4>
               <div class="align-middle pt-5">
@@ -195,8 +210,8 @@
                 The form includes a few questions with various input types. Once the user clicks submit, the owner is notified via email.</p>
               <p class="pt-4"><em> JavaScript | Bootstrap | CSS | HTLM</em></p>
                 <div class="text-center p-3">
-                  <a class="btn btn-outline-secondary btn-sm m-1" href="#">View Site</a>
-                  <a class="btn btn-outline-secondary btn-sm m-1" href="#">GitHub</a>
+                  <a class="btn btn-outline-secondary btn-sm m-1 buttonSizer" href="#">View Site</a>
+                  <a class="btn btn-outline-secondary btn-sm m-1 buttonSizer" href="#">GitHub</a>
                 </div>
             </div>
          </div> 
@@ -228,10 +243,10 @@
         <!--Project 2 Tablet / Mobile-->
         <div id="proj-two-mobile">
           <hr>
-          <div class="row pt-5 pb-5">
-            <div class="col-lg-6 p-3">
+          <div class="row pt-3 pb-3">
+            <div class="col-lg-6 pt-4">
               <h4>Your Products Dynamic Website</h4>
-              <div class="align-middle pt-5">
+              <div class="align-middle pt-4">
                 <img class="rounded img-fluid shadow" src="images/my-products.png"> 
               </div>
             </div>
@@ -276,7 +291,7 @@
         <!--Project 3 Tablet/Mobile-->
         <div id="proj-three-mobile">
           <hr>
-          <div class="row pt-5 pb-5">
+          <div class="row pt-3 pb-3">
             <div class="col-lg-6 p-3">
               <h4>Wellness & Sustainability Blog (in production)</h4>
             <div class="align-middle pt-5">
@@ -305,19 +320,19 @@
     <div id="contact">
 
       <div class="container-fluid displaytwo">
-        <div class="container">
+        <div>
           <h2 class="heading">Contact Me</h2>
           <hr>
-          <div class="row">
-            <div class="d-flex justify-content-center">
-              <div class="col-lg-4">
-                <img class="thank-img img-fluid shadow" src="file:///C:/Users/Dani/source/repos/Portfolio/images/thank-you-full.jpg" alt="Thank You Photo">
+          <div class="row pt-5">
+           
+              <div class="col-sm-12 mt-sm-2 mt-md-0 col-lg-6">
+                <img class="thank-img img-fluid shadow" id="ThankYouImg" src="file:///C:/Users/Dani/source/repos/Portfolio/images/thank-you-full.jpg" alt="Thank You Photo">
               </div>
-              <div class="col-lg-8">
+              <div class="col-sm-12 mt-sm-5 mt-lg-0 col-lg-6">
                 <p>Thank you for visiting out my portfolio! I am open to new opportunities, and I'd love to connect with you.</br></br> Let's get in contact.</p>
                 <a href="mailto: maria.sylvester10@gmail.com" target="_blank" data-toggle="tooltip" data-placement="top" title="Send an Email"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
               </div>
-            </div>
+            
           </div>
         </div> 
       </div>  
@@ -325,13 +340,11 @@
 
     <!--Start Footer-->
     <div class="footer">
-      <p>Created by Dani with <i class="fa fa-heart"></i></p>
+      <span>Created by Dani Sylvester - 2020</span>
     </div>
    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   
   </body>
 </html>
